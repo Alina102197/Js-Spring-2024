@@ -58,10 +58,16 @@
 // console.log(result);
 
 //2.
-let price = 18;
-let sale = (price >=20) ? 
-"The product is on sale" : "The product is not on sale"
-console.log(sale);
+// let price = 18;
+// let sale = (price >=20) ? 
+// "The product is on sale" : "The product is not on sale"
+// console.log(sale);
+
+// let txt = 'Hello World';
+// console.log(txt.toLowerCase());
+
+let name = 'Alina is at home';
+console.log(name.indexof("Alina"));
 
 
 
