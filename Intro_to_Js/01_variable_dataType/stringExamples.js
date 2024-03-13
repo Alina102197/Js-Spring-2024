@@ -29,9 +29,13 @@ let cityNameLength = cityName.length;
 // let cityNameStartsWithP = cityName.startsWith('P');
 // console.log(`is ${cityName} starts with "p" : ${cityNameStartsWithP}`);
 
-// let text = "The quick brown fox jumps over the lazy dog";
-// let replace_o_O = text.replace('o', 'O');
-// console.log(`replace_o_O is -> ${replace_o_O}`);
+let text = "The quick brown fox jumps over the lazy dog";
+let replace_o_O = text.replace(/fox/g, "O");
+console.log(`replace_o_O is -> ${replace_o_O}`);
+
+//charCodeAt: what is it???? what is the difference betweeen charAt() and at() !!!!!!!!!!
+// let text = "Hello Javascript"
+// console.log(text.charCodeAt(0));
 
 
 
