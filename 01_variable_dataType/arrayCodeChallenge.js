@@ -41,9 +41,6 @@ let studentNames = ['John', 'Maria', 'Lucie', 'Matt', 'Brad', 'Leslie'];
 // console.log(studentNames.lastIndexOf('John'));
 
 //7. Find out if the first index value equals to last index value
-
-
-
-
+// console.log(studentNames.indexOf('John') !== studentNames.indexOf('Leslie'));
 
 

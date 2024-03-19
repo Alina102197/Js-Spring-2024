@@ -29,9 +29,36 @@
 // } else { console.log(`The largest number is ${numberThree}`); }
 
 // 5. Write a program based on given password and displays a message based on the password using an if-else statement:
-let password = 'Test1233';
-let passwordLength = password.length;
-if(passwordLength < 8) {
-    console.log('Password too short');
-} else { console.log('Password rejected'); }
+// let password = 'Tes@t1233';
+// let passwordLength = password.length;
 
+// const pattern = /^[a-zA-Z0-9]+$/;
+// // console.log(pattern.test(password));
+
+
+// if(passwordLength < 8) {
+//     console.log('Password too short');
+// } else if (pattern.test(password)) {
+//     console.log('Password accepted');
+// } else { console.log('Password rejected'); }
+
+let mailAddress = 'alina_c@gmail.com'
+const pattern = /^[a-z0-9._@]+$/
+console.log(pattern.test(mailAddress));
+
+
+
+
+
+/**
+ * Regular Expression
+ *  is a pattern
+ * 
+ * 1. Create a regularExpression which matches with Alphabets-and-Digits [a-zA-Z0-9]+
+ * 2. Test that password contains the patterns mentioned in the regularExpression
+ * 
+ * 
+ * TestPwd1234 - true
+ * Test@1234 - false
+ * 
+ */

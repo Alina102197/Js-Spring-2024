@@ -43,7 +43,11 @@ let otherPlanets = ['food', 'bar'];
 
 //Find out if the variable is an array datatype:
 // console.log(Array.isArray(planets));
-console.log(planets.reverse());
+// console.log(planets.reverse());
+
+// console.log(planets.sort());
+console.log(planets.toSorted());
+
 
 
 
