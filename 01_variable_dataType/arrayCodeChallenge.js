@@ -1,5 +1,5 @@
 //1. Create an array of student names:
-let studentNames = ['John', 'Maria', 'Lucie', 'Matt', 'Brad', 'Leslie'];
+let studentNames = ['John', 'Maria', 'Lucie', 'Matt', 'Brad', 'Leslie', 'Johny'];
 
 //2. Find the length of an array:
 // console.log(studentNames.length);
@@ -41,6 +41,9 @@ let studentNames = ['John', 'Maria', 'Lucie', 'Matt', 'Brad', 'Leslie'];
 // console.log(studentNames.lastIndexOf('John'));
 
 //7. Find out if the first index value equals to last index value
-// console.log(studentNames.indexOf('John') !== studentNames.indexOf('Leslie'));
+
+console.log(studentNames[0]);
+console.log(studentNames[studentNames.length - 1]); // find out last index value
+console.log(studentNames[0] === studentNames[studentNames.length - 1]);
 
 
