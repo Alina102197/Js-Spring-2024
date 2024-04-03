@@ -34,8 +34,7 @@ let products = [
 
 // ***5. Use a for in loop to print out all the properties of each product in the array:
 // !!!!!!!(during the lecture we were told to not use "for in loop" for an array)
-// for (let key in products) {
-//     console.log(key + " " + products[key]);
+
 // }
 // I did it with a for loop:
 // for (let value of products) {
@@ -49,7 +48,7 @@ let products = [
 
 // *** 6. Create a program that prints the numbers from 1 to 100, but replaces multiples of 3 with "Fizz", 
 // multiples of 5 with "Buzz", and multiples of both 3 and 5 with "FizzBuzz".
-let numbers = [ ];
+
 for (i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0 ) {
         console.log('FizzBuzz');
