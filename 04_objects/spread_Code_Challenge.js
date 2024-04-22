@@ -1,22 +1,29 @@
 //1. Write a function that takes in two arrays of numbers and returns 
 //a new array containing all the elements of both arrays:
 
-// function combinedArray() {
-//     let array1 = [1, 2, 3];
-//     let array2 = [4, 5, 6];
-//     let newArray = [...array1, ...array2];
-//     return newArray
+// function combinedArray(userarray1, userarray2) {
+// return [...userarray1, ...userarray2]
+   
 // }
-// console.log(combinedArray());
+// let array1 = [1, 2, 3];
+// let array2 = [4, 5, 6];
+// console.log(combinedArray(array1,array2))
+
+
 
 //2. Write a function that takes in an array of strings and a string to add to the 
 //beginning of the array, and returns a new array with the string added to the beginning.
-// ****Why I can't use the method "unshift " inside a function?
+// ****unshift method add a string and return the length value!!!!!!!!!!!!!!!1
+
 
 // let originalArray = ['banana', 'apple', 'cherry']
-// originalArray.unshift('mango');
-// let modifiedArray = [...originalArray];
-// console.log(modifiedArray);
+
+
+// function addStringToArray(array1, string1) {
+//    array1.unshift(string1);
+//    return array1;
+// }
+// console.log(addStringToArray(originalArray, 'mango'));
 
 
 /** 3. Write a function that takes in an object and a key-value pair to add to the object, 
@@ -26,17 +33,21 @@ let person = {
     age : 34,
     isMarried : false
 }
-person.dob = '01/05/1990'
-console.log(person);
 
+
+ function addKeyValue(userObject, key, value ) {
+    userObject[key] = value;
+    return userObject;
+ }
+console.log(addKeyValue(person, 'dob','01/05/1990' ));
 
 
 /** 4. Write a function that takes in an array of numbers and returns the largest number in the array. */
-// ***** not working!!!!!!!!!!!!!!!!
+// 
 // function returnTheLargestNr(number) {
 //     let largestNumber = number[0];
 //     for (i=1; i< number.length; i++) {
-//         if (number[i] > number[0]) {
+//         if (number[i] > largestNumber) {
 //             largestNumber = number[i];
 //         }
 //     }
@@ -49,8 +60,8 @@ console.log(person);
  * strings in alphabetical order. */
 
 // function sortArray(text) {
-//     text.sort();
-//     return text;
+//    return text.sort();
+   
 // }
 
 // let originalArray = ['banana', 'apple', 'mango', 'cherry', 'acai', 'lemon', 'orange'];

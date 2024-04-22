@@ -20,19 +20,35 @@
 // let originalString = 'I am a good programmer'
 // console.log(reverseString(originalString));
 
+// function reverseString(str) {
+//     let result = '';    // to store my final answer (reversed string)
+//     let splitStringinArray = str.split(''); // [g, o, o, d,  , d, a, y]
+//     for (let i = splitStringinArray.length-1 ; i >= 0 ; i--) {
+//         result = result + splitStringinArray[i]; //  'yad' + ' ' = 'yad '
+//     }
+//     return  result;
+// }
+// let originalString = 'good day'
+// console.log(reverseString(originalString));
+
+
 // 3. Write a function that takes in an array of objects representing people, where each object has properties for 
 //name, age, and gender, and returns an array of objects representing only the people who are over the age of 18.
-
+// [{}, {}, {}, {}]
 //  function peopleOver18(arr) {
 //     let result = [ ];
-//     for (let value of people) {
-//         if (value.age >= 18) {
-//             result.push(value)
+//     for (let pObject of arr) {
+//         if (pObject.age >= 18) {
+//             result.push(pObject)
 //         }
 //     }
 //     return result;
 //  }
 
+//  function peopleOver181(arr) {
+//     let result = arr.filter( pObject => pObject.age >= 18)
+//     return result;
+//  }
 
 //  let people = [
 //     {
@@ -57,6 +73,7 @@
 //     }
 // ];
 // console.log(peopleOver18(people));
+// console.log(peopleOver181(people));
 
 // 4. Write a function that takes in an array of numbers and returns a new array 
 //containing only the even numbers from the original array.:
@@ -69,15 +86,21 @@
 //     }
 //     return evenArray;
 // }
+
+// function evenNumberArray1(numbers) {
+//     return numbers.filter(num => num%2===0);
+// }
+
+
 // let numberArray = [10, 55, 6, 73, 100, 13, 42]
 // console.log(evenNumberArray(numberArray));
+// console.log(evenNumberArray1(numberArray));
 
 //5. Write a function that takes in an array of strings and returns a new array containing only the 
 //strings that start with the letter "A".
-//*****Cannot figure this out!!!!!!!!!!!!!! */
-// let originalArray = ['Apple', 'Grape', 'Lemon','Avocado', 'Apricot'];
-// let convertToString = originalArray.toString();
-// console.log(convertToString);
+let originalArray = ['Apple', 'Grape', 'Lemon','Avocado', 'Apricot']; // ['Apple', 'Avocado', 'Apricot']
+let convertToString = originalArray.toString();
+console.log(convertToString);
 // for (i = 0; i< convertToString.length; i++) {
 //     if (convertToString[i].startsWith('A')) {
 //         console.log(convertToString[i])
@@ -85,6 +108,22 @@
 // let newArray = convertToString.split()
 
 // }
+// function arrayValStartsWithA(userArray) {
+//     let arrayStartsWithA = [];
+//     for (let i=0 ; i<userArray.length ; i++) {
+//         if(userArray[i].startsWith('A')) {
+//             arrayStartsWithA.push(userArray[i])
+//         }
+//     }
+//     return arrayStartsWithA;
+// }
+// function arrayValStartsWithA1(userArray) {
+//     return userArray.filter(val => val.startsWith('A'));
+// }
+
+
+// console.log(arrayValStartsWithA(originalArray))
+// console.log(arrayValStartsWithA1(originalArray))
 
 // 6. Write a function that takes in an array of objects representing books, 
 //where each object has properties for title, author, and published, and returns an array of strings 
@@ -101,12 +140,12 @@ let books = [
         published : 1960
     },
     {
-        name : 'Pride and Prejudice',
+        title : 'Pride and Prejudice',
         author : 'Jane Austin',
         published : 1813
     }
 ];
-//*****IDK how to formulate a function here!!!!!!!!!!!!!!! */
+//*Regular block of code:
 // let modifiedArray = [ ];
 // for (i=0; i<books.length; i++) {
 //     if (books[i].published >=1900) {
@@ -114,6 +153,16 @@ let books = [
 //     }
 // }
 // console.log(modifiedArray);
+// function getTitlesBeyond1900(booksArray) {
+//     let modifiedArray = [];
+//     for (i=0; i<booksArray.length; i++) {
+//         if (booksArray[i].published >=1900) {
+//              modifiedArray.push(booksArray[i].title)
+//         }
+//     }
+//     return modifiedArray;
+// }
+// console.log(getTitlesBeyond1900(books))
 
 //7. Write a function that takes in two numbers and returns the larger of the two.
 // function findLargerNumer(a,b) {
@@ -130,8 +179,8 @@ let books = [
 // function smallestNrInArray(numbers) {
 //     let smallestNumber = numbers[0];
 //     for (i=1; i < numbers.length; i++) {
-//         if (numbers[i] < numbers[0]) {
-//             smallestNumber = arr[i]
+//         if (numbers[i] < smalletNumber) {
+//             smallestNumber = numbers[i]
 //         }
 //     }
 // return smallestNumber;
@@ -145,25 +194,26 @@ let books = [
 // let longestString = fruits[0];
 // let i = 1;
 // while (i < fruits.length) {
-//     if (fruits[i].length > fruits[0].length) {
+//     if (fruits[i].length > longestString.length) {
 //         longestString = fruits[i];
 //     }
 //     i++;
 // }
 // console.log(longestString);
-// *****Function is not working!!!!!!!!!!!!!!!!!!
-// function longestStringInArray(text) {
-//     let longestString = text[0];
-//     let i = 1;
-//     while (i < text.length) {
-//         if (text[i].length > text[0].length) {
-//             longestString = text[i];
-//         }
-//     }
-//     i++;
-// }
-// let fruits = ['apple', 'banana', 'pineaple', 'strawberry'];
-// console.log(longestStringInArray(fruits));
+
+function longestStringInArray(text) {
+    let longestString = text[0];
+    let i = 1;
+    while (i < text.length) {
+        if (text[i].length > longestString.length) {
+            longestString = text[i];
+        }
+        i++
+    }
+    return longestString
+}
+let fruits = ['apple', 'banana', 'pineaple', 'strawberry'];
+console.log(longestStringInArray(fruits));
 
 //10.Write a function that takes in an array of objects representing students,
 // where each object has properties for name and grade, and returns an array of objects representing only the students 
@@ -190,12 +240,15 @@ let students = [
         grade : 'A'
     }
 ]
-// let gradeAArray = [ ];
-// for (i = 0; i< students.length; i++) {
-//     if (students[i].grade === 'A') {
-//         gradeAArray.push(students[i])
-//     }
-// }
-// console.log(gradeAArray);
 
-//*****IDK how to formulate a function here!!!!!!!!!!!!!!! */
+
+function studentswithgradeA(studentsArray) {
+    let modifiedArray = [ ];
+    for (i=0; i<studentsArray.length; i++) {
+        if (studentsArray[i].grade === 'A') {
+            modifiedArray.push(studentsArray[i])
+        }
+    }
+    return modifiedArray;
+}
+console.log(studentswithgradeA(students));

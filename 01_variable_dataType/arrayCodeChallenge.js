@@ -26,9 +26,9 @@ let studentNames = ['John', 'Maria', 'Lucie', 'Matt', 'Brad', 'Leslie', 'Johny']
 // console.log(studentNames);
 
 //3.5 function splice() :
-// console.log(studentNames);
-// console.log(studentNames.splice(3, 2, 'Chris'));
-// console.log(studentNames);
+console.log(studentNames);
+console.log(studentNames.splice(3, 2, 'Chris'));
+console.log(studentNames);
 
 //4. Find out if array includes the value ‘John’:
 // console.log(studentNames.includes('John'));
@@ -42,8 +42,8 @@ let studentNames = ['John', 'Maria', 'Lucie', 'Matt', 'Brad', 'Leslie', 'Johny']
 
 //7. Find out if the first index value equals to last index value
 
-console.log(studentNames[0]);
-console.log(studentNames[studentNames.length - 1]); // find out last index value
-console.log(studentNames[0] === studentNames[studentNames.length - 1]);
+// console.log(studentNames[0]);
+// console.log(studentNames[studentNames.length - 1]); // find out last index value
+// console.log(studentNames[0] === studentNames[studentNames.length - 1]);
 
 

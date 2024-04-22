@@ -33,12 +33,8 @@ let products = [
 // } console.log(`Total value of all products is: $${sum}`)
 
 // ***5. Use a for in loop to print out all the properties of each product in the array:
-// !!!!!!!(during the lecture we were told to not use "for in loop" for an array)
 
-// }
-// I did it with a for loop:
 // for (let value of products) {
-//     //console.log(value);
 //     console.log('\nProduct detail:');
 //     for (let prod in value) {
 //         console.log(`${prod} : ${value[prod]}`);
@@ -49,17 +45,17 @@ let products = [
 // *** 6. Create a program that prints the numbers from 1 to 100, but replaces multiples of 3 with "Fizz", 
 // multiples of 5 with "Buzz", and multiples of both 3 and 5 with "FizzBuzz".
 
-for (i = 1; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0 ) {
-        console.log('FizzBuzz');
-    } else if (i % 5 === 0) {
-        console.log('Buzz');
-    } else if (i % 3 === 0) {
-        console.log('Fizz');
-    } else { 
-        console.log(i);
-    }
-}
+// for (i = 1; i <= 100; i++) {
+//     if (i % 3 === 0 && i % 5 === 0 ) {
+//         console.log('FizzBuzz');
+//     } else if (i % 5 === 0) {
+//         console.log('Buzz');
+//     } else if (i % 3 === 0) {
+//         console.log('Fizz');
+//     } else { 
+//         console.log(i);
+//     }
+// }
     
    
 

@@ -23,7 +23,7 @@ let otherPlanets = ['food', 'bar'];
 // console.log(planetJoinString);
 // console.log(typeof planetJoinString);
 // console.log(planets);
-//Remove the last element from an array:
+// Remove the last element from an array:
 // let poppedValue = planets.pop();
 
 // console.log(poppedValue);
@@ -45,8 +45,8 @@ let otherPlanets = ['food', 'bar'];
 // console.log(Array.isArray(planets));
 // console.log(planets.reverse());
 
-// console.log(planets.sort());
-console.log(planets.toSorted());
+// console.log(planets.sort()); // sorts the array alphabetically
+// console.log(planets.toSorted());
 
 
 
